@@ -1,0 +1,35 @@
+{
+  "name": "hive",
+  "version": "0.0.1",
+  "description": "TypeScript utilities functions that got your back",
+  "author": {
+    "name": "Thomas Brodusch",
+    "email": "brodusch.thomas@gmail.com",
+    "url": "https://github.com/thomasbrodusch"
+  },
+  "type": "module",
+  "main": "src/main.js",
+  "license": "MIT",
+  "keywords": [
+    "function",
+    "toolbox",
+    "utils",
+    "checker",
+    "transformer",
+    "sanitizer"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "test": "vitest --config vitest.config.ts",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@vitest/coverage-c8": "^0.25.8",
+    "prettier": "2.8.1",
+    "rollup": "^3.7.5",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4",
+    "vitest": "^0.25.8"
+  }
+}
