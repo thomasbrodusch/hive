@@ -4,7 +4,7 @@ const outputOptions = {
   exports: "named",
   preserveModules: true,
   banner: `/*
-   * Hive.js Library
+   * Piupiu Library
    * https://github.com/thomasbrodusch/hive
    * (c) Thomas Brodusch (@thomasbrodusch)
    */`,
