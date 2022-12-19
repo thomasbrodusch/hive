@@ -1,0 +1,54 @@
+{
+  "name": "piupiu",
+  "version": "0.1.0",
+  "description": "piupiu - JavaScript utilities functions that got your back",
+  "author": {
+    "name": "Thomas Brodusch",
+    "url": "https://github.com/thomasbrodusch"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c",
+    "test": "vitest --config vitest.config.ts",
+    "coverage": "vitest run --coverage"
+  },
+  "license": "MIT",
+  "keywords": [
+    "functions",
+    "toolbox",
+    "utils",
+    "checker",
+    "transformer",
+    "sanitizer",
+    "helpers"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomasbrodusch/piupiu.git"
+  },
+  "homepage": "https://github.com/thomasbrodusch/piupiu",
+  "bugs": {
+    "url": "https://github.com/thomasbrodusch/piupiu/issues"
+  },
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@vitest/coverage-c8": "^0.25.8",
+    "prettier": "2.8.1",
+    "rollup": "^3.7.5",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4",
+    "vitest": "^0.25.8"
+  }
+}
