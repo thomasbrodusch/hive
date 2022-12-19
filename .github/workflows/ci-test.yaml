@@ -1,0 +1,17 @@
+name: CI
+run-name: ${{ github.actor }} has triggered CI/test
+on:
+  push:
+    branches: [ develop, production ]
+  pull_request:
+    branches: [ develop ]
+jobs:
+  ci-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: yarn
+      - run: yarn test
