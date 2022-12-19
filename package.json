@@ -1,0 +1,47 @@
+{
+  "name": "hive",
+  "version": "0.0.1",
+  "description": "JavaScript utilities functions that got your back",
+  "author": {
+    "name": "Thomas Brodusch",
+    "email": "brodusch.thomas@gmail.com",
+    "url": "https://github.com/thomasbrodusch"
+  },
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "function",
+    "toolbox",
+    "utils",
+    "checker",
+    "transformer",
+    "sanitizer"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c",
+    "test": "vitest --config vitest.config.ts",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@vitest/coverage-c8": "^0.25.8",
+    "prettier": "2.8.1",
+    "rollup": "^3.7.5",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4",
+    "vitest": "^0.25.8"
+  }
+}
