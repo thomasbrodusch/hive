@@ -10,7 +10,8 @@
     "prebuild": "rm -rf dist",
     "build": "rollup -c",
     "test": "vitest --config vitest.config.ts",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "preview-doc": "docsify serve docs"
   },
   "license": "MIT",
   "keywords": [
@@ -45,6 +46,7 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^10.0.1",
     "@vitest/coverage-c8": "^0.25.8",
+    "docsify-cli": "^4.4.4",
     "prettier": "2.8.1",
     "rollup": "^3.7.5",
     "tslib": "^2.4.1",
