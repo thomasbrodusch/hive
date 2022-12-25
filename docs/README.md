@@ -4,15 +4,4 @@
 ![license](https://img.shields.io/github/license/thomasbrodusch/piupiu?color=%2365C764)
 
 JavaScript utilities functions that got your back.
-
-## Installation
-`yarn add piupiu -D`
-
-## Usage
-
-```typescript
-import piupiu from 'piupiu';
-
-const str = 'toto';
-const strCapitalized = piupiu.capitalize(str); // 'Toto'
-```
+>  First of all have a look on  [Quick start](quickstart.md) 🥳
