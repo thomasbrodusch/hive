@@ -47,6 +47,7 @@ import piupiu from 'piupiu'
     - [ capitalize ](./docs/transformers/capitalize.md)
     - [ snakeCase ](./docs/transformers/snakeCase.md)
     - [ formatJapaneseUnicode ](./docs/transformers/formatJapaneseUnicode.md)
+    - [ stringSegmenter ](./docs/transformers/stringSegmenter.md)
   
 - Validators
   - [ isString ](./docs/validators/isString.md)
