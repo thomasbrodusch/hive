@@ -21,6 +21,7 @@
   - [ capitalize ](transformers/capitalize.md)
   - [ snakeCase ](transformers/snakeCase.md)
   - [ formatJapaneseUnicode ](transformers/formatJapaneseUnicode.md)
+  - [ stringSegmenter ](transformers/stringSegmenter.md)
 
 - Validators
   - [ isString ](validators/isString.md)
