@@ -9,6 +9,7 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "rollup -c",
+    "lint": "yarn eslint .",
     "test": "vitest --config vitest.config.ts",
     "coverage": "vitest run --coverage",
     "preview-doc": "docsify serve docs"
@@ -45,8 +46,11 @@
   ],
   "devDependencies": {
     "@rollup/plugin-typescript": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
     "@vitest/coverage-c8": "^0.25.8",
     "docsify-cli": "^4.4.4",
+    "eslint": "^8.30.0",
     "prettier": "2.8.1",
     "rollup": "^3.7.5",
     "tslib": "^2.4.1",
