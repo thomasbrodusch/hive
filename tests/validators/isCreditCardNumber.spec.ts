@@ -1,7 +1,7 @@
-import isValidCreditCard from "@/checkers/isValidCreditCard";
+import isCreditCardNumber from "@/validators/isCreditCardNumber";
 import { nonStringValueCheck } from "../support";
 
-describe("isValidCreditCard", () => {
+describe("isCreditCardNumber", () => {
   it.each([
     [false, "112"],
     [false, "toto"],
@@ -11,11 +11,10 @@ describe("isValidCreditCard", () => {
     [true, "5430455205894921"], //MasterCard
     [true, "371331832313571"], //AMEX
     ...nonStringValueCheck().map((nSv) => [false, nSv]),
-    ,
   ])(
-    "should return %s for isValidCreditCard(%s)",
+    "should return %s for isCreditCardNumber(%s)",
     (expected: boolean, input: string) => {
-      expect(isValidCreditCard(input)).toBe(expected);
+      expect(isCreditCardNumber(input)).toBe(expected);
     }
   );
 });

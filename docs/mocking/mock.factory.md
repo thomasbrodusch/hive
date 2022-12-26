@@ -52,7 +52,7 @@ class User implements UserMockType {
 }
 ```
 
-2. Implements `MockFactory` coupled with some randomizers like [piupiu.RandomString](../randomizers/randomString.md) & [piupiu.RandomBoolean](../randomizers/randomBoolean.md) to generate some fake users
+2. Implements `MockFactory` coupled with some randomizers like [piupiu.RandomString](randomizers/randomString.md) & [piupiu.RandomBoolean](randomizers/randomBoolean.md) to generate some fake users
 ```javascript
 const userMockGenerator = new MockFactory<UserMockType>(({ options = {}, override = {} }) => {
     return new User({

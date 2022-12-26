@@ -8,9 +8,8 @@ const luhnCheck = (creditCardNumbers: string): boolean => {
     .split("")
     .reverse()
     .reduce((acc: any, val: any) => {
-      let calc = 0;
       //Extract the next digit value and multiply by salt.
-      calc = Number(val) * salt;
+      let calc = Number(val) * salt;
 
       //If the result is in two digits add 1 to the checksum total
       if (isTwoDigitsNumber(calc)) {

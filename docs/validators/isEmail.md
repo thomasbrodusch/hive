@@ -1,8 +1,8 @@
-## `piupiu.isValidEmail(input)`
+## `piupiu.isEmail(input)`
 > Return true if input is a valid email.
 > If not, return false.
 
-[Source](https://github.com/thomasbrodusch/piupiu/blob/develop/src/checkers/isValidEmail.ts)
+[Source](https://github.com/thomasbrodusch/piupiu/blob/develop/src/validators/isEmail.ts)
 
 ### Description
 - We use a regex advertised as "practical" and covering 99.99% of cases - [See More](https://www.regular-expressions.info/email.html)
@@ -21,35 +21,35 @@
 
 ### Example
 ```javascript
-piupiu.isValidEmail('toto@toto.com'); 
+piupiu.isEmail('toto@toto.com'); 
 // true
 ```
 ```javascript
-piupiu.isValidEmail('toto@toto');
+piupiu.isEmail('toto@toto');
 // false
 ```
 ```javascript
-piupiu.isValidEmail('_=0-34-;3@toto.com');
+piupiu.isEmail('_=0-34-;3@toto.com');
 // false
 ```
 ```javascript
-piupiu.isValidEmail(0);
+piupiu.isEmail(0);
 // false
 ```
 ```javascript
-piupiu.isValidEmail(undefined);
+piupiu.isEmail(undefined);
 // false
 ```
 ```javascript
-piupiu.isValidEmail({});
+piupiu.isEmail({});
 // false
 ```
 ```javascript
-piupiu.isValidEmail([]);
+piupiu.isEmail([]);
 // false
 ```
 ```javascript
-piupiu.isValidEmail(NaN);
+piupiu.isEmail(NaN);
 // false
 ```
 

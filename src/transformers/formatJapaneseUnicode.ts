@@ -1,6 +1,6 @@
 import cleanSpaces from "@/sanitizers/cleanSpaces";
 import cleanPunctuation from "@/sanitizers/cleanPunctuation";
-import isString from "@/checkers/isString";
+import isString from "@/validators/isString";
 
 export default (input: string): string => {
   if (!isString(input)) {

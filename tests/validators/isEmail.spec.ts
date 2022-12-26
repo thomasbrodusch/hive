@@ -1,4 +1,4 @@
-import isValidEmail from "../../src/checkers/isValidEmail";
+import isEmail from "@/validators/isEmail";
 
 describe("isValideEmail", () => {
   it.each([
@@ -17,9 +17,9 @@ describe("isValideEmail", () => {
     [true, "NOM_firstname@domain.email"],
     [true, "NOM_firstname+toto+tata@domain.email"],
   ])(
-    "should return %s for isValidEmail(%s)",
+    "should return %s for isEmail(%s)",
     (expected: boolean, input: string) => {
-      expect(isValidEmail(input)).toBe(expected);
+      expect(isEmail(input)).toBe(expected);
     }
   );
 });

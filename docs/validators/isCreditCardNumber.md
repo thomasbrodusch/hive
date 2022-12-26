@@ -1,8 +1,8 @@
-## `piupiu.isValidCreditCard(input)`
+## `piupiu.isCreditCardNumber(input)`
 > Return true if input is a valid credit card number.
 > If not, return false.
 
-[Source](https://github.com/thomasbrodusch/piupiu/blob/develop/src/checkers/isValidCreditCard.ts)
+[Source](https://github.com/thomasbrodusch/piupiu/blob/develop/src/validators/isCreditCardNumber.ts)
 
 
 ### Description
@@ -23,35 +23,35 @@ We perform some basic checks, input string :
 
 ### Example
 ```javascript
-piupiu.isValidCreditCard('4816089253950827'); 
+piupiu.isCreditCardNumber('4816089253950827'); 
 // true
 ```
 ```javascript
-piupiu.isValidCreditCard('4816 0892 5395 0827'); 
+piupiu.isCreditCardNumber('4816 0892 5395 0827'); 
 // false
 ```
 ```javascript
-piupiu.isValidCreditCard('qededq');
+piupiu.isCreditCardNumber('qededq');
 // false
 ```
 ```javascript
-piupiu.isValidCreditCard(0);
+piupiu.isCreditCardNumber(0);
 // false
 ```
 ```javascript
-piupiu.isValidCreditCard(undefined);
+piupiu.isCreditCardNumber(undefined);
 // false
 ```
 ```javascript
-piupiu.isValidCreditCard({});
+piupiu.isCreditCardNumber({});
 // false
 ```
 ```javascript
-piupiu.isValidCreditCard([]);
+piupiu.isCreditCardNumber([]);
 // false
 ```
 ```javascript
-piupiu.isValidCreditCard(NaN);
+piupiu.isCreditCardNumber(NaN);
 // false
 ```
 
