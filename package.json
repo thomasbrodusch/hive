@@ -1,6 +1,6 @@
 {
   "name": "piupiu",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "piupiu - JavaScript utilities functions that got your back",
   "author": {
     "name": "Thomas Brodusch",
@@ -37,8 +37,6 @@
     "url": "https://github.com/thomasbrodusch/piupiu/issues"
   },
   "type": "module",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
