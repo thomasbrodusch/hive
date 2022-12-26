@@ -1,5 +1,6 @@
 - Getting started
     - [Quick start](quickstart.md)
+    - [Changelog](https://github.com/thomasbrodusch/piupiu/blob/develop/CHANGELOG.md)
 
 - Mocking
   - [ MockFactory ](mocking/mock.factory.md)
