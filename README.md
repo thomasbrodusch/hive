@@ -27,28 +27,28 @@ import piupiu from 'piupiu'
 - Getting started
     - [Quick start](./docs/quickstart.md)
 
+- Mocking
+  - [ MockFactory ](./docs/mocking/mock.factory.md)
+
+- Randomizers
+  - [ randomString ](./docs/randomizers/randomString.md)
+  - [ randomNumber ](./docs/randomizers/randomNumber.md)
+  - [ randomBoolean ](./docs/randomizers/randomBoolean.md)
+  - [ randomObject ](./docs/randomizers/randomObject.md)
+  - [ randomItemInArray ](./docs/randomizers/randomItemInArray.md)
+
 - Sanitizers
     - [ cleanAccent ](./docs/sanitizers/cleanAccents.md)
     - [ cleanPunctuation ](./docs/sanitizers/cleanPunctuation.md)
     - [ cleanSpaces ](./docs/sanitizers/cleanSpaces.md)
-
-- Checkers
-    - [ isString ](./docs/checkers/isString.md)
-    - [ isValidEmail ](./docs/checkers/isValidEmail.md)
-    - [ isValidCreditCard ](./docs/checkers/isValidCreditCard.md)
 
 - Transformers
     - [ camelCase ](./docs/transformers/camelCase.md)
     - [ capitalize ](./docs/transformers/capitalize.md)
     - [ snakeCase ](./docs/transformers/snakeCase.md)
     - [ formatJapaneseUnicode ](./docs/transformers/formatJapaneseUnicode.md)
-
-- Randomizers
-    - [ randomString ](./docs/randomizers/randomString.md)
-    - [ randomNumber ](./docs/randomizers/randomNumber.md)
-    - [ randomBoolean ](./docs/randomizers/randomBoolean.md)
-    - [ randomObject ](./docs/randomizers/randomObject.md)
-    - [ randomItemInArray ](./docs/randomizers/randomItemInArray.md)
-
-- Mocking
-    - [ MockFactory ](./docs/mocking/mockFactory.md)
+  
+- Validators
+  - [ isString ](./docs/validators/isString.md)
+  - [ isEmail ](./docs/validators/isEmail.md)
+  - [ isCreditCardNumber ](./docs/validators/isCreditCardNumber.md)

@@ -2,7 +2,7 @@
 > Return true if input is a String. 
 > If not, return false.
 
-[Source](https://github.com/thomasbrodusch/piupiu/blob/develop/src/checkers/isString.ts)
+[Source](https://github.com/thomasbrodusch/piupiu/blob/develop/src/validators/isString.ts)
 
 ### Since
 `0.1.0`

@@ -2,7 +2,7 @@
 > Return true if input is a valid email.
 > If not, return false.
 
-[Source](https://github.com/thomasbrodusch/piupiu/blob/develop/src/checkers/isValidEmail.ts)
+[Source](https://github.com/thomasbrodusch/piupiu/blob/develop/src/validators/isValidEmail.ts)
 
 ### Description
 - We use a regex advertised as "practical" and covering 99.99% of cases - [See More](https://www.regular-expressions.info/email.html)
