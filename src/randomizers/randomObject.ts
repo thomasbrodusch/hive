@@ -3,7 +3,7 @@ import RandomNumber from "@/randomizers/randomNumber";
 import RandomString from "@/randomizers/randomString";
 import RandomBoolean from "@/randomizers/randomBoolean";
 
-export default new MockFactory<any>(
+export default new MockFactory<object>(
   ({ options }: { options: { propCount?: number } } = { options: {} }) => {
     const { propCount = 5 } = options;
     return Array.from(new Array(propCount)).reduce((obj, _, i) => {

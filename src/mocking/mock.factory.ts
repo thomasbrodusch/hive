@@ -1,6 +1,6 @@
 interface optionalArgs {
-  options?: Object;
-  override?: Object;
+  options?: object;
+  override?: object;
 }
 
 export default class MockFactory<Type> {
@@ -13,8 +13,8 @@ export default class MockFactory<Type> {
 
   getArray(
     args: {
-      options?: Object;
-      overrides?: any[];
+      options?: optionalArgs["options"];
+      overrides?: optionalArgs["override"][];
       length?: number;
     } = {}
   ): Type[] {

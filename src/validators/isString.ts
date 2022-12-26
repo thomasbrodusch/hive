@@ -1,3 +1,3 @@
-export default (input?: any) => {
+export default (input: unknown) => {
   return input && typeof input === "string";
 };

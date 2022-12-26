@@ -7,7 +7,7 @@ const luhnCheck = (creditCardNumbers: string): boolean => {
   const checksum = creditCardNumbers
     .split("")
     .reverse()
-    .reduce((acc: any, val: any) => {
+    .reduce((acc: number, val: string) => {
       //Extract the next digit value and multiply by salt.
       let calc = Number(val) * salt;
 
