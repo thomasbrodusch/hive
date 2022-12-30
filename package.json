@@ -63,7 +63,8 @@
     "standard-version": "^9.5.0",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4",
-    "vitest": "^0.26.2"
+    "vitest": "^0.26.2",
+    "vitest-fail-on-console": "^0.1.0"
   },
   "gitHooks": {
     "pre-commit": "yarn lint",
